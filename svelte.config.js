@@ -14,7 +14,9 @@ const config = {
 
 		adapter: adapter({
 			fallback: '404.html',
-			pages: 'build',
+			 pages: 'build',       // folder for HTML output
+      assets: 'build',
+      fallback: 'index.html'
 		}),
 		paths: {
 			base: process.env.BASE_PATH || ''
