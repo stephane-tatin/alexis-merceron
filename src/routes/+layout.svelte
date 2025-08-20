@@ -2,6 +2,8 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import '../app.css';
 	import data from '$lib/data.json';
+	import { base } from '$app/paths';
+
 	let isActive = 1;
 	function setActive(e) {
 		isActive = +e.srcElement.id;
@@ -19,7 +21,7 @@
 					id={nav.id.toString()}
 					class={`text-sm font-semibold text-gray-900 px-3 py-2 rounded-md ${isActive === nav.id ? 'bg-gray-200' : ''}`}
 					on:click={setActive}
-					href="/{nav.path}">{nav.title}</a
+					href="{base}/{nav.path}">{nav.title}</a
 				>
 			{/each}
 		</div>

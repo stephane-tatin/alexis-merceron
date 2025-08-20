@@ -14,13 +14,12 @@ const config = {
 		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 
 		adapter: adapter({
-			fallback: '404.html',
-			 pages: 'build',       // folder for HTML output
-      assets: 'build',
-      fallback: 'index.html'
+			pages: 'build', // folder for HTML output
+			assets: 'build',
+			fallback: 'index.html'
 		}),
 		paths: {
-			base: dev ? '' : '/alexis-merceron' 
+			base: dev ? '' : '/alexis-merceron'
 		}
 	}
 };
