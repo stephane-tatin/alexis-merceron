@@ -35,11 +35,11 @@
 <style>
 	.nav-img-container img {
 		width: 300%;
-		height: auto; 
+		height: auto;
 		object-fit: cover;
 
 		top: 0;
-		left: -100px; 
+		left: -100px;
 		height: 200px;
 	}
 </style>
