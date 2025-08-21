@@ -19,8 +19,7 @@
 
 		lightbox.init();
 	});
-	let showTooltip = false;
-	let tooltipText = 'This is a tooltip!';
+
 </script>
 
 <div class="flex items-center min-h-screen info-container">
@@ -79,7 +78,6 @@
 	.img-container {
 		max-height: 250px;
 	}
-
 	.texts-container {
 		max-width: 50%;
 		flex-direction: column;
