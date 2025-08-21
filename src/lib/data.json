@@ -75,6 +75,13 @@
 		],
 		"images": [
 			{
+				"title": "Message du président de la République, 4 août 1914",
+				"path": "./situation-politique/union-sacree.jpeg",
+				"width": 1024,
+				"height": 1400,
+				"src": "Bibliothèque multimédia intercommunale d'Épinal, AFF 1914/63 P/M"
+			},
+			{
 				"title": "Declaration du gouvernement, 4 août 1914",
 				"path": "./situation-politique/declaration_du_gouvernement_4-08-1914.jpeg",
 				"width": 1024,
@@ -274,8 +281,8 @@
 				"title": "Lettre - Ambulance 1-70",
 				"desc": "desc carte",
 				"path": "./louis-merceron/lettre-mort.jpg",
-				"width": 944,
-				"height": 1417
+				"width": 1488,
+				"height": 2048
 			},
 			{
 				"title": "Fiche matriculaire",
@@ -303,6 +310,10 @@
 			{
 				"desc": "Généalogie",
 				"url": "https://gw.geneanet.org/mtatin?n=merceron&oc=&p=louis+honore+alexis&type=fiche"
+			},
+			{
+				"desc": "Nécropole nationale Notre Dame de Lorette",
+				"url": "https://fr.geneawiki.com/wiki/N%C3%A9cropole_nationale_Notre_Dame_de_Lorette_-_M"
 			}
 		]
 	}

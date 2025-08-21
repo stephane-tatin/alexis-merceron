@@ -45,7 +45,7 @@
 					<h2
 						data-tooltip-target="tooltip-light"
 						data-tooltip-style="light"
-						class="mb-2 font-semibold text-gray-900 dark:text-white"
+						class="mb-2 font-semibold text-gray-900 dark:text-white tooltip-title"
 					>
 						{image.title}
 					</h2>
@@ -74,9 +74,9 @@
 	.imgs-container {
 		display: flex;
 		gap: 40px;
+		padding-top: 100px;
 	}
 	.img-container {
-		padding-top: 100px;
 		max-height: 250px;
 	}
 
@@ -87,7 +87,7 @@
 		gap: 10px;
 	}
 	.text-container {
-		text-align: center;
+		text-align: justifiy;
 	}
 
 	.info-container {
@@ -103,7 +103,12 @@
 		display: flex;
 		gap: 5px;
 	}
+
+	.tooltip-title {
+		text-align: center;
+	}
 	.links-container {
 		padding-top: 50px;
+		padding-right: 25%;
 	}
 </style>

@@ -1,6 +1,5 @@
 <script>
-	export let text = 'Tooltip text';
-	export let position = 'bottom';
+	export let text = 'Missing text';
 	let showTooltip = false;
 </script>
 
@@ -8,11 +7,17 @@
 	<button
 		on:click={() => (showTooltip = true)}
 		on:mouseleave={() => (showTooltip = false)}
-		class="toottip-button inline-flex justify-center w-3 h-3 rounded-full bg-gray-200 text-gray-700
-         hover:bg-gray-300 active:bg-gray-400 transition
-         focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-500 focus-visible:ring-offset-2"
+		class="ml-2 p-1 rounded-full hover:bg-gray-200"
+		aria-label="Voir la source de l'image"
 	>
-		<span class="tool-tip-text font-semibold tracking-wide">src</span>
+		<svg class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			<path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				stroke-width="2"
+				d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+			/>
+		</svg>
 	</button>
 
 	{#if showTooltip}

@@ -1,12 +1,11 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.svg';
 	import '../app.css';
 	import data from '$lib/data.json';
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 
 	let isActive = 1;
-	function setActive(e) {
-		isActive = +e.srcElement.id;
+	function setActive(e: any) {
+		isActive = +e.target.id;
 	}
 </script>
 
@@ -21,16 +20,12 @@
 					id={nav.id.toString()}
 					class={`text-sm font-semibold text-gray-900 px-3 py-2 rounded-md ${isActive === nav.id ? 'bg-gray-200' : ''}`}
 					on:click={setActive}
-					href="{base}/{nav.path}">{nav.title}</a
+					href={resolve(`/${nav.path}`)}>{nav.title}</a
 				>
 			{/each}
 		</div>
 	</nav>
 </header>
-
-<svelte:head>
-	<link rel="icon" href={favicon} />
-</svelte:head>
 
 <slot />
 
