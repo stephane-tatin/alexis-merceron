@@ -19,19 +19,21 @@
 
 		lightbox.init();
 	});
-
 </script>
 
-<div class="flex items-center min-h-screen info-container">
-	<div class="texts-container">
+<div class="flex flex-col items-center min-h-screen info-container pt-16 pb-10">
+	<div class="w-full max-w-3xl px-4 space-y-3">
 		{#each data.texts as text}
-			<p class="text-container">{@html text}</p>
+			<p class="text-justify leading-relaxed">{@html text}</p>
 		{/each}
 	</div>
 
-	<div class="imgs-container pswp-gallery pswp-gallery--single-column" id="gallery-1">
+	<div
+		class="flex flex-col items-center lg:items-start lg:flex-row lg:flex-wrap w-full max-w-7xl mt-12 px-4 gap-6 justify-center"
+		id="gallery-1"
+	>
 		{#each data.images as image}
-			<div class="flex items-center image-container">
+			<div class="flex flex-col items-center max-w-40">
 				<a
 					href={image.path}
 					data-pswp-width={image.width}
@@ -40,11 +42,11 @@
 				>
 					<img class="img-container" src={image.path} alt={image.desc} />
 				</a>
-				<div class="image-title-container">
+				<div class="flex gap-2 mt-2 items-center">
 					<h2
 						data-tooltip-target="tooltip-light"
 						data-tooltip-style="light"
-						class="mb-2 font-semibold text-gray-900 dark:text-white tooltip-title"
+						class="font-semibold text-gray-900 dark:text-white text-center"
 					>
 						{image.title}
 					</h2>
@@ -53,9 +55,9 @@
 			</div>
 		{/each}
 	</div>
-	<div class="links-container">
+	<div class="w-full max-w-xl mt-10 px-4">
 		<h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Liens:</h2>
-		<ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+		<ul class="list-disc list-inside text-gray-500 dark:text-gray-400 space-y-1">
 			{#each data.links as link}
 				<div class="link-container">
 					<li>
@@ -70,43 +72,4 @@
 </div>
 
 <style>
-	.imgs-container {
-		display: flex;
-		gap: 40px;
-		padding-top: 100px;
-	}
-	.img-container {
-		max-height: 250px;
-	}
-	.texts-container {
-		max-width: 50%;
-		flex-direction: column;
-		display: flex;
-		gap: 10px;
-	}
-	.text-container {
-		text-align: justifiy;
-	}
-
-	.info-container {
-		padding-top: 4rem;
-		flex-direction: column;
-		padding-bottom: 10%;
-	}
-
-	.image-container {
-		flex-direction: column;
-	}
-	.image-title-container {
-		display: flex;
-		gap: 5px;
-	}
-
-	.tooltip-title {
-		text-align: center;
-	}
-	.links-container {
-		padding-top: 50px;
-		padding-right: 25%;
-	}
 </style>
