@@ -46,7 +46,7 @@
 					<h2
 						data-tooltip-target="tooltip-light"
 						data-tooltip-style="light"
-						class="font-semibold text-gray-900 dark:text-white text-center"
+						class="font-semibold text-gray-900 text-center"
 					>
 						{image.title}
 					</h2>
