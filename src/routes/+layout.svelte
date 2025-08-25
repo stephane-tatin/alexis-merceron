@@ -61,13 +61,13 @@
 			{/each}
 		</div>
 		{#if showTitle}
-			<span
-				class={` transition-all duration-200 ease-in-out lg:hidden
+			<h2
+				class={`"mb-2 text-xl font-semibold text-gray-900 transition-all duration-200 ease-in-out lg:hidden
                 ${isOpen ? 'hidden opacity-0 scale-95' : 'block opacity-100 scale-100'}
       			${!isOpen ? 'delay-300' : ''}`}
 			>
 				{displayTitle($activeNavItem)}
-			</span>
+			</h2>
 		{/if}
 	</nav>
 </header>
