@@ -47,7 +47,7 @@
 			{#each data as nav}
 				<a
 					id={nav.id.toString()}
-					class={`text-sm font-semibold px-3 py-2 rounded-md transition-colors
+					class={`text-xl lg:text-sm font-semibold px-3 py-2 rounded-md transition-colors
                   ${
 										$activeNavItem === nav.id
 											? 'bg-gray-200 text-gray-900'
@@ -62,7 +62,7 @@
 		</div>
 		{#if showTitle}
 			<h2
-				class={`"mb-2 text-xl font-semibold text-gray-900 transition-all duration-200 ease-in-out lg:hidden
+				class={`"mb-2 text-xl pr-10 font-semibold text-gray-900 transition-all duration-200 ease-in-out lg:hidden
                 ${isOpen ? 'hidden opacity-0 scale-95' : 'block opacity-100 scale-100'}
       			${!isOpen ? 'delay-300' : ''}`}
 			>
