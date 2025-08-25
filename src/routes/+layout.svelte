@@ -4,6 +4,19 @@
 	import { resolve } from '$app/paths';
 	import { activeNavItem } from '$lib/store';
 
+	function displayTitle(navId: number) {
+		return data.find((d) => d.id === navId)?.title;
+	}
+
+	let showTitle = true;
+
+	$: if (isOpen) {
+		showTitle = false;
+	} else {
+		setTimeout(() => {
+			showTitle = true;
+		}, 300); // correspond à la durée de la transition du menu
+	}
 
 	let isOpen = false;
 	function setActive(e: any) {
@@ -17,7 +30,7 @@
 		<img class="w-full h-full object-cover" src="./nav2.png" alt="navigation BG" />
 	</div>
 	<nav class="flex items-center justify-between p-4 lg:px-8">
-		<button class="lg:hidden p-2 text-gray-700" on:click={() => (isOpen = !isOpen)}>
+		<button class="flex lg:hidden p-2 text-gray-700" on:click={() => (isOpen = !isOpen)}>
 			{#if !isOpen}
 				☰
 			{:else}
@@ -47,6 +60,15 @@
 				</a>
 			{/each}
 		</div>
+		{#if showTitle}
+			<span
+				class={` transition-all duration-200 ease-in-out lg:hidden
+                ${isOpen ? 'hidden opacity-0 scale-95' : 'block opacity-100 scale-100'}
+      			${!isOpen ? 'delay-300' : ''}`}
+			>
+				{displayTitle($activeNavItem)}
+			</span>
+		{/if}
 	</nav>
 </header>
 

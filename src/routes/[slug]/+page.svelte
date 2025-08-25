@@ -33,7 +33,7 @@
 		id="gallery-1"
 	>
 		{#each data.images as image}
-			<div class="flex flex-col items-center max-w-40">
+			<div class="flex flex-col items-center max-w-100 lg:max-w-40">
 				<a
 					href={image.path}
 					data-pswp-width={image.width}
