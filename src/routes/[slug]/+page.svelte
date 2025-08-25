@@ -29,7 +29,7 @@
 	</div>
 
 	<div
-		class="flex flex-col items-center lg:items-start lg:flex-row lg:flex-wrap w-full max-w-7xl mt-12 px-4 gap-6 justify-center"
+		class="flex flex-col items-center lg:items-start lg:flex-row lg:flex-wrap w-full max-w-7xl mt-16 px-4 gap-6 justify-center"
 		id="gallery-1"
 	>
 		{#each data.images as image}
@@ -50,7 +50,9 @@
 					>
 						{image.title}
 					</h2>
-					<Tooltip text={image.src} />
+					{#if image.src}
+						<Tooltip text={image.src} />
+					{/if}
 				</div>
 			</div>
 		{/each}
