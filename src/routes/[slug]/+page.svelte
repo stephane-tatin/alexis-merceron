@@ -46,7 +46,7 @@
 					<h2
 						data-tooltip-target="tooltip-light"
 						data-tooltip-style="light"
-						class="font-semibold text-gray-900 dark:text-white text-center"
+						class="font-semibold text-gray-900 text-center"
 					>
 						{image.title}
 					</h2>
@@ -56,7 +56,7 @@
 		{/each}
 	</div>
 	<div class="w-full max-w-xl mt-10 px-4">
-		<h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Liens:</h2>
+		<h2 class="mb-2 text-lg font-semibold text-gray-900">Liens:</h2>
 		<ul class="list-disc list-inside text-gray-500 dark:text-gray-400 space-y-1">
 			{#each data.links as link}
 				<div class="link-container">
