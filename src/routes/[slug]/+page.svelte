@@ -5,10 +5,11 @@
 	import PhotoSwipeLightbox from 'photoswipe/lightbox';
 	import 'photoswipe/style.css';
 	import Tooltip from '../../lib/ToolTip.svelte';
+	const galleryId = `gallery-${Math.random().toString(36).substr(2, 9)}`;
 
 	onMount(() => {
 		let lightbox = new PhotoSwipeLightbox({
-			gallery: '#gallery-1',
+			gallery: `#${galleryId}`,
 			children: 'a',
 			pswpModule: () => import('photoswipe'),
 			pswpOptions: {
@@ -19,6 +20,8 @@
 
 		lightbox.init();
 	});
+
+	const toLowResPath = (path) => `lowres/${path.replace(/\.(jpe?g|png)$/i, "")}.webp` 
 </script>
 
 <div class="flex flex-col items-center min-h-screen info-container pt-16 pb-10">
@@ -30,7 +33,7 @@
 
 	<div
 		class="flex flex-col items-center lg:items-start lg:flex-row lg:flex-wrap w-full max-w-7xl mt-16 px-4 gap-6 justify-center"
-		id="gallery-1"
+		id={galleryId}
 	>
 		{#each data.images as image}
 			<div class="flex flex-col items-center max-w-100 lg:max-w-40">
@@ -40,7 +43,7 @@
 					data-pswp-height={image.height}
 					data-pswp-caption={image.desc}
 				>
-					<img class="img-container" src={image.path} alt={image.desc} />
+					<img class="img-container" src="{toLowResPath(image.path)}" alt={image.desc} />
 				</a>
 				<div class="flex gap-2 mt-2 items-center">
 					<h2
