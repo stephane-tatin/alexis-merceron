@@ -21,7 +21,7 @@
 		lightbox.init();
 	});
 
-	const toLowResPath = (path) => `lowres/${path.replace(/\.(jpe?g|png)$/i, "")}.webp` 
+	const toLowResPath = (path) => `lowres/${path.replace(/\.(jpe?g|png)$/i, '')}.webp`;
 </script>
 
 <div class="flex flex-col items-center min-h-screen info-container pt-16 pb-10">
@@ -43,7 +43,7 @@
 					data-pswp-height={image.height}
 					data-pswp-caption={image.desc}
 				>
-					<img class="img-container" src="{toLowResPath(image.path)}" alt={image.desc} />
+					<img class="img-container" src={toLowResPath(image.path)} alt={image.desc} />
 				</a>
 				<div class="flex gap-2 mt-2 items-center">
 					<h2
@@ -64,13 +64,11 @@
 		<h2 class="mb-2 text-lg font-semibold text-gray-900">Liens:</h2>
 		<ul class="list-disc list-inside text-gray-500 dark:text-gray-400 space-y-1">
 			{#each data.links as link}
-				<div class="link-container">
-					<li>
-						<a href={link.url} class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-							>{link.desc}</a
-						>
-					</li>
-				</div>
+				<li class="link-container">
+					<a href={link.url} class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+						>{link.desc}</a
+					>
+				</li>
 			{/each}
 		</ul>
 	</div>
