@@ -20,8 +20,6 @@
 
 		lightbox.init();
 	});
-
-	const toLowResPath = (path) => `lowres/${path.replace(/\.(jpe?g|png)$/i, '')}.webp`;
 </script>
 
 <div class="flex flex-col items-center min-h-screen info-container pt-16 pb-10">
@@ -43,7 +41,7 @@
 					data-pswp-height={image.height}
 					data-pswp-caption={image.desc}
 				>
-					<img class="img-container" src={toLowResPath(image.path)} alt={image.desc} />
+					<img class="img-container" src={image.thumbnail} alt={image.desc} />
 				</a>
 				<div class="flex gap-2 mt-2 items-center">
 					<h2

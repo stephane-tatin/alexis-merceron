@@ -1,10 +1,10 @@
-import datas from '$lib/data.json';
+import { assets } from '$lib';
 export const prerender = true;
 import { redirect } from '@sveltejs/kit';
 
 export function load({ params }) {
-	if (!datas.map((d) => d.path).includes(params.slug)) {
+	if (!assets.map((d) => d.path).includes(params.slug)) {
 		redirect('308', './situation-geopolitique');
 	}
-	return datas.find((data) => data.path === params.slug);
+	return assets.find((asset) => asset.path === params.slug);
 }

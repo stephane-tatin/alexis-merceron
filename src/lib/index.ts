@@ -19,7 +19,8 @@ export const assets: Data[] = [
 				path: './geopolitique/carte-europe.jpeg',
 				width: 4000,
 				height: 3081,
-				src: 'BnF, département des Cartes et Plans, GE AA 450'
+				src: 'BnF, département des Cartes et Plans, GE AA 450',
+				thumbnail: 'lowres/geopolitique/carte-europe.webp'
 			},
 			{
 				title: 'Die Zeit - 28 septembre 1914',
@@ -27,7 +28,8 @@ export const assets: Data[] = [
 				path: './geopolitique/die-zeit-28-9-1914.jpg',
 				width: 1341,
 				height: 1959,
-				src: 'Österreichische Nationalbibliothek - https://alex.onb.ac.at/cgi-content/anno?aid=zei&datum=19140728&seite=1&zoom=33'
+				src: 'Österreichische Nationalbibliothek - https://alex.onb.ac.at/cgi-content/anno?aid=zei&datum=19140728&seite=1&zoom=33',
+				thumbnail: 'lowres/geopolitique/die-zeit-28-9-1914.webp'
 			},
 			{
 				title: 'Berliner Tageblatt - 2 août 1914',
@@ -35,7 +37,8 @@ export const assets: Data[] = [
 				path: './geopolitique/berliner-tageblatt-2-8-1914.jpg',
 				width: 2400,
 				height: 3417,
-				src: 'Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Berlin, Germany - AusgabeJahrgang 43Nr. 387, 02. August 1914'
+				src: 'Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Berlin, Germany - AusgabeJahrgang 43Nr. 387, 02. August 1914',
+				thumbnail: 'lowres/geopolitique/berliner-tageblatt-2-8-1914.webp'
 			},
 			{
 				title: 'Le Petit Parisien - 3 août 1914',
@@ -43,7 +46,8 @@ export const assets: Data[] = [
 				path: './geopolitique/le-petit-parisien-3-8-1914.jpeg',
 				width: 2048,
 				height: 2813,
-				src: 'Bibliothèque nationale de France, Gr Fol-Lc2-3850'
+				src: 'Bibliothèque nationale de France, Gr Fol-Lc2-3850',
+				thumbnail: 'lowres/geopolitique/le-petit-parisien-3-8-1914.webp'
 			},
 			{
 				title: 'Daily Express - 4 août 1914',
@@ -51,7 +55,8 @@ export const assets: Data[] = [
 				path: './geopolitique/daily-express-5-8-1914.jpg',
 				width: 2480,
 				height: 3509,
-				src: 'https://www.britishnewspaperarchive.co.uk/'
+				src: 'https://www.britishnewspaperarchive.co.uk/',
+				thumbnail: 'lowres/geopolitique/daily-express-5-8-1914.webp'
 			}
 		],
 		links: [
@@ -81,35 +86,40 @@ export const assets: Data[] = [
 				path: './situation-politique/union-sacree.jpeg',
 				width: 1024,
 				height: 1400,
-				src: "Bibliothèque multimédia intercommunale d'Épinal, AFF 1914/63 P/M"
+				src: "Bibliothèque multimédia intercommunale d'Épinal, AFF 1914/63 P/M",
+				thumbnail: 'lowres/situation-politique/union-sacree.webp'
 			},
 			{
 				title: 'Ordre de mobilisation générale',
 				path: './situation-politique/ordre-de-mobilisation-generale.jpg',
 				width: 1024,
 				height: 1272,
-				src: 'Bibliothèque nationale de France, département Estampes et photographie, ENT QB-1 (1914)-FT6'
+				src: 'Bibliothèque nationale de France, département Estampes et photographie, ENT QB-1 (1914)-FT6',
+				thumbnail: 'lowres/situation-politique/ordre-de-mobilisation-generale.webp'
 			},
 			{
 				title: 'Le Petit Parisien - 22 mai 1915',
 				path: './situation-politique/le-petit-parisien-22-mai-1915.jpg',
 				width: 2048,
 				height: 2822,
-				src: 'Bibliothèque nationale de France, Gr Fol-Lc2-3850'
+				src: 'Bibliothèque nationale de France, Gr Fol-Lc2-3850',
+				thumbnail: 'lowres/situation-politique/le-petit-parisien-22-mai-1915.webp'
 			},
 			{
 				title: 'Le moral de nos combattants - Le Petit Parisien - 22 mai 1915',
 				path: './situation-politique/le_petit_parisien-le-moral-de-nos-combattants.jpg',
 				width: 858,
 				height: 2889,
-				src: 'Bibliothèque nationale de France, Gr Fol-Lc2-3850'
+				src: 'Bibliothèque nationale de France, Gr Fol-Lc2-3850',
+				thumbnail: 'lowres/situation-politique/le_petit_parisien-le-moral-de-nos-combattants.webp'
 			},
 			{
 				title: 'Le Petit Parisien - 18 juin 1915',
 				path: './situation-politique/le-petit-parisien_18-06-1915.jpeg',
 				width: 2048,
 				height: 2777,
-				src: 'Bibliothèque nationale de France, Gr Fol-Lc2-3850'
+				src: 'Bibliothèque nationale de France, Gr Fol-Lc2-3850',
+				thumbnail: 'lowres/situation-politique/le-petit-parisien_18-06-1915.webp'
 			}
 		],
 		links: [
@@ -136,7 +146,8 @@ export const assets: Data[] = [
 				path: './bataille-artois/bataille-artois-route-carency-souchez.jpg',
 				width: 1354,
 				height: 844,
-				src: 'Archives départementales du Pas-de-Calais, 5 Fi 213/7.'
+				src: 'Archives départementales du Pas-de-Calais, 5 Fi 213/7.',
+				thumbnail: 'lowres/bataille-artois/bataille-artois-route-carency-souchez.webp'
 			},
 			{
 				title: 'Poste Français à Carency - 1914 - 1915',
@@ -144,7 +155,8 @@ export const assets: Data[] = [
 				path: './bataille-artois/artois_poste-francais.jpg',
 				width: 1358,
 				height: 880,
-				src: 'Archives départementales du Pas-de-Calais, 5 Fi 213/013'
+				src: 'Archives départementales du Pas-de-Calais, 5 Fi 213/013',
+				thumbnail: 'lowres/bataille-artois/artois_poste-francais.webp'
 			},
 			{
 				title: "Carte de la deuxième bataille d'Artois",
@@ -152,7 +164,8 @@ export const assets: Data[] = [
 				path: './bataille-artois/15-05-09-bataille-artois-carte.jpg',
 				width: 639,
 				height: 1051,
-				src: 'Archives départementales du Pas-de-Calais, BHC 236/2.'
+				src: 'Archives départementales du Pas-de-Calais, BHC 236/2.',
+				thumbnail: 'lowres/bataille-artois/15-05-09-bataille-artois-carte.webp'
 			},
 			{
 				title: 'Disposition des divisions - Pas de Calais - 16 juin 1915',
@@ -160,7 +173,8 @@ export const assets: Data[] = [
 				path: './bataille-artois/carte-16-juin-1915.png',
 				width: 1387,
 				height: 1047,
-				src: 'https://www.carto1418.fr/19150616.php'
+				src: 'https://www.carto1418.fr/19150616.php',
+				thumbnail: 'lowres/bataille-artois/carte-16-juin-1915.webp'
 			},
 			{
 				title: "Village d'Albain - juin 1915",
@@ -168,7 +182,8 @@ export const assets: Data[] = [
 				path: './bataille-artois/bataille-artois_ablain.jpg',
 				width: 1436,
 				height: 903,
-				src: 'Archvies départementales du Pas-de-Calais, 5 Fi 01/064'
+				src: 'Archvies départementales du Pas-de-Calais, 5 Fi 01/064',
+				thumbnail: 'lowres/bataille-artois/bataille-artois_ablain.webp'
 			}
 		],
 		links: [
@@ -180,10 +195,7 @@ export const assets: Data[] = [
 				desc: "Bataille d'Artois - 16-19 juin 1915",
 				url: 'https://www.archivespasdecalais.fr/Decouvrir/Chroniques-de-la-Grande-Guerre/Histoires-de-la-Grande-Guerre/Relance-des-offensives-de-la-deuxieme-bataille-d-Artois'
 			},
-			{
-				desc: 'Cartographie 1914 - 1918',
-				url: 'https://www.carto1418.fr/19150616.php'
-			}
+			{ desc: 'Cartographie 1914 - 1918', url: 'https://www.carto1418.fr/19150616.php' }
 		]
 	},
 	{
@@ -203,7 +215,8 @@ export const assets: Data[] = [
 				path: './32-eme-regiment-infanterie/arrive-au-corps-dec-1914.jpg',
 				width: 2481,
 				height: 7081,
-				src: "Ce que nous avons fait, historique du 32e régiment d'infanterie pendant la campagne 1914-1919 / André Gadioux et Maurice Pouron -- Service historique de la Défense, 2011-323932"
+				src: "Ce que nous avons fait, historique du 32e régiment d'infanterie pendant la campagne 1914-1919 / André Gadioux et Maurice Pouron -- Service historique de la Défense, 2011-323932",
+				thumbnail: 'lowres/32-eme-regiment-infanterie/arrive-au-corps-dec-1914.webp'
 			},
 			{
 				title: 'JMO - 30 avril 1915',
@@ -211,7 +224,8 @@ export const assets: Data[] = [
 				path: './32-eme-regiment-infanterie/jmo-30-avril.jpg',
 				width: 2242,
 				height: 1671,
-				src: 'J.M.O. - 5 août 1914-31 décembre 1916 - 26 N 605/12 - Cote : 26 N 605/12'
+				src: 'J.M.O. - 5 août 1914-31 décembre 1916 - 26 N 605/12 - Cote : 26 N 605/12',
+				thumbnail: 'lowres/32-eme-regiment-infanterie/jmo-30-avril.webp'
 			},
 			{
 				title: 'Tranchée - côte 119',
@@ -219,7 +233,8 @@ export const assets: Data[] = [
 				path: './32-eme-regiment-infanterie/cote-119.jpg',
 				width: 1072,
 				height: 690,
-				src: 'Notre-Dame de Lorette - Les Tranchées de la cote 119 (The Trenches of the Cote 119). Archives départementales du Pas-de-Calais, 5 Fi 01/124.'
+				src: 'Notre-Dame de Lorette - Les Tranchées de la cote 119 (The Trenches of the Cote 119). Archives départementales du Pas-de-Calais, 5 Fi 01/124.',
+				thumbnail: 'lowres/32-eme-regiment-infanterie/cote-119.webp'
 			},
 			{
 				title: "Carte de l'attaque du 16 Juin 1915",
@@ -227,7 +242,8 @@ export const assets: Data[] = [
 				path: './32-eme-regiment-infanterie/carte-bataille-artois.jpg',
 				width: 1566,
 				height: 963,
-				src: "Ce que nous avons fait, historique du 32e régiment d'infanterie pendant la campagne 1914-1919 / André Gadioux et Maurice Pouron -- Service historique de la Défense, 2011-323932"
+				src: "Ce que nous avons fait, historique du 32e régiment d'infanterie pendant la campagne 1914-1919 / André Gadioux et Maurice Pouron -- Service historique de la Défense, 2011-323932",
+				thumbnail: 'lowres/32-eme-regiment-infanterie/carte-bataille-artois.webp'
 			},
 			{
 				title: 'JMO - 15 et 16 juin 1915',
@@ -235,7 +251,8 @@ export const assets: Data[] = [
 				path: './32-eme-regiment-infanterie/jmo-15-16-juin.jpg',
 				width: 2249,
 				height: 1654,
-				src: 'J.M.O. - 5 août 1914-31 décembre 1916 - 26 N 605/12 - Cote : 26 N 605/12'
+				src: 'J.M.O. - 5 août 1914-31 décembre 1916 - 26 N 605/12 - Cote : 26 N 605/12',
+				thumbnail: 'lowres/32-eme-regiment-infanterie/jmo-15-16-juin.webp'
 			},
 			{
 				title: '3ème RI rhénan - 16 juin 1915',
@@ -243,7 +260,8 @@ export const assets: Data[] = [
 				path: './32-eme-regiment-infanterie/historique-RI-rhenan.jpg',
 				width: 4962,
 				height: 3509,
-				src: '[Das Infanterie-Regiment von Horn (3. Rheinisches) Nr. 29] Band 2 - Signatur F 388-Pr.,292'
+				src: '[Das Infanterie-Regiment von Horn (3. Rheinisches) Nr. 29] Band 2 - Signatur F 388-Pr.,292',
+				thumbnail: 'lowres/32-eme-regiment-infanterie/historique-RI-rhenan.webp'
 			}
 		],
 		links: [
@@ -273,35 +291,40 @@ export const assets: Data[] = [
 				path: './louis-merceron/avis-deces.jpg',
 				width: 944,
 				height: 1417,
-				src: 'https://www.memoiredeshommes.sga.defense.gouv.fr/conflits-et-operations-2/premiere-guerre-mondiale/morts-pour-la-france-de-la-premiere-guerre-mondiale/faire-une-recherche?detail=5589866&arko_default_670f920646a08--modeRestit=arko_default_670fa8ee50d1b'
+				src: 'https://www.memoiredeshommes.sga.defense.gouv.fr/conflits-et-operations-2/premiere-guerre-mondiale/morts-pour-la-france-de-la-premiere-guerre-mondiale/faire-une-recherche?detail=5589866&arko_default_670f920646a08--modeRestit=arko_default_670fa8ee50d1b',
+				thumbnail: 'lowres/louis-merceron/avis-deces.webp'
 			},
 			{
 				title: 'Lettre - Ambulance 1-70',
 				desc: 'desc carte',
 				path: './louis-merceron/lettre-mort.jpg',
 				width: 1488,
-				height: 2048
+				height: 2048,
+				thumbnail: 'lowres/louis-merceron/lettre-mort.webp'
 			},
 			{
 				title: 'Fiche matriculaire',
 				desc: 'desc carte',
 				path: './louis-merceron/matricule.jpg',
 				width: 2104,
-				height: 3120
+				height: 3120,
+				thumbnail: 'lowres/louis-merceron/matricule.webp'
 			},
 			{
 				title: 'Pose en uniforme',
 				desc: 'desc carte',
 				path: './louis-merceron/pose-uniforme.jpg',
 				width: 298,
-				height: 446
+				height: 446,
+				thumbnail: 'lowres/louis-merceron/pose-uniforme.webp'
 			},
 			{
 				title: 'Mémorial',
 				desc: 'desc carte',
 				path: './louis-merceron/memorial.jpg',
 				width: 960,
-				height: 1280
+				height: 1280,
+				thumbnail: 'lowres/louis-merceron/memorial.webp'
 			}
 		],
 		links: [
