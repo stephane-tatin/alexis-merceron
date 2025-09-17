@@ -40,6 +40,7 @@
 					data-pswp-width={image.width}
 					data-pswp-height={image.height}
 					data-pswp-caption={image.desc}
+					aria-label={`Ouvrir l'image : ${image.desc}`}
 				>
 					<img class="img-container" src={image.thumbnail} alt={image.desc} />
 				</a>
@@ -71,6 +72,3 @@
 		</ul>
 	</div>
 </div>
-
-<style>
-</style>

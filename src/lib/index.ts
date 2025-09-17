@@ -303,6 +303,14 @@ export const assets: Data[] = [
 				thumbnail: 'lowres/louis-merceron/lettre-mort.webp'
 			},
 			{
+				title: 'Décès - Archives paroisse St-Clémentin',
+				path: './louis-merceron/deces-paroisse.jpg',
+				width: 531,
+				height: 708,
+				thumbnail: 'lowres/louis-merceron/deces-paroisse.webp',
+				src: 'Archives paroisse St-Clémentin'
+			},
+			{
 				title: 'Fiche matriculaire',
 				desc: 'desc carte',
 				path: './louis-merceron/matricule.jpg',
@@ -317,6 +325,15 @@ export const assets: Data[] = [
 				width: 298,
 				height: 446,
 				thumbnail: 'lowres/louis-merceron/pose-uniforme.webp'
+			},
+
+			{
+				title: 'Tombe - Nécropole nationale Notre Dame de Lorette',
+				desc: 'desc carte',
+				path: './louis-merceron/tombe.jpg',
+				width: 1836,
+				height: 3264,
+				thumbnail: 'lowres/louis-merceron/tombe.webp'
 			},
 			{
 				title: 'Mémorial',

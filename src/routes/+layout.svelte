@@ -4,9 +4,13 @@
 	import { resolve } from '$app/paths';
 	import { activeNavItem, isOpen } from '$lib/store';
 	import { displayTitle, setActive } from '$lib/nav';
+	import { page } from '$app/state';
 
 	let showTitle = true;
 	$: currentTitle = displayTitle(assets, $activeNavItem);
+
+	const currentId = assets.find((a) => a.path === page.url.pathname.slice(1))?.id;
+	currentId && setActive(currentId.toString(), activeNavItem, isOpen);
 
 	$: if ($isOpen) {
 		showTitle = false;
@@ -49,8 +53,9 @@
 											? 'bg-gray-200 text-gray-900'
 											: 'text-gray-700 hover:bg-gray-100'
 									}`}
-					on:click={(e) => setActive(e, activeNavItem, isOpen)}
-					on:keydown={(e) => e.key === 'Enter' && setActive(e, activeNavItem, isOpen)}
+					on:click={(e: any) => e.target?.id && setActive(e.target.id, activeNavItem, isOpen)}
+					on:keydown={(e: any) =>
+						e.key === 'Enter' && e.target?.id && setActive(e.target.id, activeNavItem, isOpen)}
 					href={resolve(`/${nav.path}`)}
 				>
 					{nav.title}
@@ -68,6 +73,9 @@
 		{/if}
 	</nav>
 </header>
-
 <slot />
-
+<a
+	href="mailto:stephane.tatin@gmail.com"
+	class="mb-3 mr-3 flex justify-end font-medium text-blue-400 dark:text-blue-500 hover:underline"
+	>Contact</a
+>
