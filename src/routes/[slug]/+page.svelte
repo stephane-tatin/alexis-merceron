@@ -5,10 +5,11 @@
 	import PhotoSwipeLightbox from 'photoswipe/lightbox';
 	import 'photoswipe/style.css';
 	import Tooltip from '../../lib/ToolTip.svelte';
+	const galleryId = `gallery-${Math.random().toString(36).substr(2, 9)}`;
 
 	onMount(() => {
 		let lightbox = new PhotoSwipeLightbox({
-			gallery: '#gallery-1',
+			gallery: `#${galleryId}`,
 			children: 'a',
 			pswpModule: () => import('photoswipe'),
 			pswpOptions: {
@@ -29,18 +30,18 @@
 	</div>
 
 	<div
-		class="flex flex-col items-center lg:items-start lg:flex-row lg:flex-wrap w-full max-w-7xl mt-12 px-4 gap-6 justify-center"
-		id="gallery-1"
+		class="flex flex-col items-center lg:items-start lg:flex-row lg:flex-wrap w-full max-w-7xl mt-16 px-4 gap-6 justify-center"
+		id={galleryId}
 	>
 		{#each data.images as image}
-			<div class="flex flex-col items-center max-w-40">
+			<div class="flex flex-col items-center max-w-100 lg:max-w-40">
 				<a
 					href={image.path}
 					data-pswp-width={image.width}
 					data-pswp-height={image.height}
 					data-pswp-caption={image.desc}
 				>
-					<img class="img-container" src={image.path} alt={image.desc} />
+					<img class="img-container" src={image.thumbnail} alt={image.desc} />
 				</a>
 				<div class="flex gap-2 mt-2 items-center">
 					<h2
@@ -50,7 +51,9 @@
 					>
 						{image.title}
 					</h2>
-					<Tooltip text={image.src} />
+					{#if image.src}
+						<Tooltip text={image.src} />
+					{/if}
 				</div>
 			</div>
 		{/each}
@@ -59,13 +62,11 @@
 		<h2 class="mb-2 text-lg font-semibold text-gray-900">Liens:</h2>
 		<ul class="list-disc list-inside text-gray-500 dark:text-gray-400 space-y-1">
 			{#each data.links as link}
-				<div class="link-container">
-					<li>
-						<a href={link.url} class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-							>{link.desc}</a
-						>
-					</li>
-				</div>
+				<li class="link-container">
+					<a href={link.url} class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+						>{link.desc}</a
+					>
+				</li>
 			{/each}
 		</ul>
 	</div>

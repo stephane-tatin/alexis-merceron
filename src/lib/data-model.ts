@@ -1,5 +1,5 @@
 export interface Data {
-	id: string;
+	id: number;
 	title: string;
 	path: string;
 	texts: string[];
@@ -12,9 +12,10 @@ export interface Data {
 
 interface Image {
 	title: string;
-	desc: string;
+	desc?: string;
 	path: string;
 	width: number;
 	height: number;
-	src: string;
+	src?: string;
+	thumbnail: string;
 }
