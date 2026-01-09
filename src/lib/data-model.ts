@@ -18,4 +18,5 @@ interface Image {
 	height: number;
 	src?: string;
 	thumbnail: string;
+	parentId: number;
 }

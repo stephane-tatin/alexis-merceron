@@ -6,9 +6,9 @@
 	import 'photoswipe/style.css';
 	import Tooltip from '../../lib/ToolTip.svelte';
 	const galleryId = `gallery-${Math.random().toString(36).substr(2, 9)}`;
-
+	let lightbox;
 	onMount(() => {
-		let lightbox = new PhotoSwipeLightbox({
+		lightbox = new PhotoSwipeLightbox({
 			gallery: `#${galleryId}`,
 			children: 'a',
 			pswpModule: () => import('photoswipe'),
@@ -34,29 +34,31 @@
 		id={galleryId}
 	>
 		{#each data.images as image}
-			<div class="flex flex-col items-center max-w-100 lg:max-w-40">
-				<a
-					href={image.path}
-					data-pswp-width={image.width}
-					data-pswp-height={image.height}
-					data-pswp-caption={image.desc}
-					aria-label={`Ouvrir l'image : ${image.desc}`}
-				>
-					<img class="img-container" src={image.thumbnail} alt={image.desc} />
-				</a>
-				<div class="flex gap-2 mt-2 items-center">
-					<h2
-						data-tooltip-target="tooltip-light"
-						data-tooltip-style="light"
-						class="font-semibold text-gray-900 text-center"
+			{#if image.parentId === data.id}
+				<div class="flex flex-col items-center max-w-100 lg:max-w-40">
+					<a
+						href={image.path}
+						data-pswp-width={image.width}
+						data-pswp-height={image.height}
+						data-pswp-caption={image.desc}
+						aria-label={`Ouvrir l'image : ${image.desc}`}
 					>
-						{image.title}
-					</h2>
-					{#if image.src}
-						<Tooltip text={image.src} />
-					{/if}
+						<img class="img-container" src={image.thumbnail} alt={image.desc} />
+					</a>
+					<div class="flex gap-2 mt-2 items-center">
+						<h2
+							data-tooltip-target="tooltip-light"
+							data-tooltip-style="light"
+							class="font-semibold text-gray-900 text-center"
+						>
+							{image.title}
+						</h2>
+						{#if image.src}
+							<Tooltip text={image.src} />
+						{/if}
+					</div>
 				</div>
-			</div>
+			{/if}
 		{/each}
 	</div>
 	<div class="w-full max-w-xl mt-10 px-4">

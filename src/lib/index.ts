@@ -10,7 +10,7 @@ export const assets: Data[] = [
 			'L’Autriche-Hongrie lutte contre des revendications nationalistes dans son empire, qui pourraient mener à son éclatement. La Russie se voit comme la protectrice des populations slaves, et l’utilise comme prétexte pour étendre son influence. L’Allemagne, arrivée tard dans la course aux colonies, se sent lésée dans le partage du monde. L’Italie revendique des territoires appartenant à l’Autriche-Hongrie. La France cherche à prendre sa revanche après avoir dû céder l’Alsace-Lorraine en 1871. La Grande Bretagne, qui domine le monde, souhaite préserver cet équilibre.',
 			'La France, le Royaume-Uni et la Russie forment une alliance appelée la Triple-Entente. L’Allemagne, l’Autriche-Hongrie et l’Italie forment la Triple-Alliance.',
 			'De brefs et fréquents conflits dans les colonies laissent penser que la guerre est un moyen naturel de défendre ses intérêts, et qu’elle ne saurait jamais durer longtemps entre des puissances européennes développées. La révolution industrielle, en décuplant la létalité des armes à disposition, a changé la face de la guerre, mais les doctrines militaires n’ont pas encore intégré ces innovations technologiques et sont obsolètes pour le conflit qui s’annonce.',
-			'Une guerre à grande échelle sur le continent semble impensable et est souvent évitée de justesse. Dans ce contexte dangereux, l’assassinat à Sarajevo de l’archiduc Franz-Ferdinand, le 28 juin 1914, héritier au trône de l’Autriche-Hongrie, déclenche l’engrenage des alliances et précipite l’Europe dans la Première Guerre mondiale.'
+			'Une guerre à grande échelle sur le continent est souvent évitée de justesse et semble impensable. Dans ce contexte dangereux, l’assassinat à Sarajevo de l’archiduc Franz-Ferdinand, le 28 juin 1914, héritier au trône de l’Autriche-Hongrie, déclenche l’engrenage des alliances et précipite l’Europe dans la Première Guerre mondiale.'
 		],
 		images: [
 			{
@@ -20,7 +20,8 @@ export const assets: Data[] = [
 				width: 4000,
 				height: 3081,
 				src: 'BnF, département des Cartes et Plans, GE AA 450',
-				thumbnail: 'lowres/geopolitique/carte-europe.webp'
+				thumbnail: 'lowres/geopolitique/carte-europe.webp',
+				parentId: 1
 			},
 			{
 				title: 'Die Zeit - 28 septembre 1914',
@@ -29,7 +30,8 @@ export const assets: Data[] = [
 				width: 1341,
 				height: 1959,
 				src: 'Österreichische Nationalbibliothek - https://alex.onb.ac.at/cgi-content/anno?aid=zei&datum=19140728&seite=1&zoom=33',
-				thumbnail: 'lowres/geopolitique/die-zeit-28-9-1914.webp'
+				thumbnail: 'lowres/geopolitique/die-zeit-28-9-1914.webp',
+				parentId: 1
 			},
 			{
 				title: 'Berliner Tageblatt - 2 août 1914',
@@ -38,7 +40,8 @@ export const assets: Data[] = [
 				width: 2400,
 				height: 3417,
 				src: 'Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Berlin, Germany - AusgabeJahrgang 43Nr. 387, 02. August 1914',
-				thumbnail: 'lowres/geopolitique/berliner-tageblatt-2-8-1914.webp'
+				thumbnail: 'lowres/geopolitique/berliner-tageblatt-2-8-1914.webp',
+				parentId: 1
 			},
 			{
 				title: 'Le Petit Parisien - 3 août 1914',
@@ -47,7 +50,8 @@ export const assets: Data[] = [
 				width: 2048,
 				height: 2813,
 				src: 'Bibliothèque nationale de France, Gr Fol-Lc2-3850',
-				thumbnail: 'lowres/geopolitique/le-petit-parisien-3-8-1914.webp'
+				thumbnail: 'lowres/geopolitique/le-petit-parisien-3-8-1914.webp',
+				parentId: 1
 			},
 			{
 				title: 'Daily Express - 4 août 1914',
@@ -56,7 +60,8 @@ export const assets: Data[] = [
 				width: 2480,
 				height: 3509,
 				src: 'https://www.britishnewspaperarchive.co.uk/',
-				thumbnail: 'lowres/geopolitique/daily-express-5-8-1914.webp'
+				thumbnail: 'lowres/geopolitique/daily-express-5-8-1914.webp',
+				parentId: 1
 			}
 		],
 		links: [
@@ -75,7 +80,7 @@ export const assets: Data[] = [
 		title: 'Situation politique',
 		path: 'situation-politique',
 		texts: [
-			"Au début de l'année 1914, la France vit sous la IIIème République. Le président est Raymond Poincaré, un républicain modéré, attachée à une ligne ferme envers l’Allemagne. Le pays est alors dans une situation difficile et fait face à une crise démographique d’ampleur, une stagnation économique et une polarisation politique importante. La population vieillissante est majoritairement rurale et les campagnes fournissent la masse de l’infanterie française.",
+			"Au début de l'année 1914, la France vit sous la IIIème République. Le président est Raymond Poincaré, un républicain modéré, attaché à une ligne ferme envers l’Allemagne. Le pays est alors dans une situation difficile et fait face à une crise démographique d’ampleur, une stagnation économique et une polarisation politique importante. La population vieillissante est majoritairement rurale et les campagnes fournissent la masse de l’infanterie française.",
 			'Le 31 juillet 1914, Jean Jaurès, la dernière grande voix pour la paix est assassinée dans un café parisien. Le 3 Aout, l’Allemagne déclare la guerre à la France après avoir envahi la Belgique neutre. Toutes les forces politiques mettent alors leurs différends de côté et soutiennent l’effort de guerre sous ce que l’on appellera « l’union sacrée «.',
 			'Afin de maintenir le moral et d’éviter de divulguer des informations sensibles à l’adversaire, la presse est strictement censurée et ne donne pas de nouvelles négatives du front. Après la bataille de la Marne, qui arrête l’avancée allemande en septembre 1914, et quelques affrontements infructueux, le front commence à se figer.',
 			'Au début du mois de mai 1915, l’état-major souhaite réinjecter du mouvement dans cette guerre de position, l’opinion publique ne comprend pas pourquoi les territoires occupés au Nord-est n’ont pas encore été libérés. Le généralissime Joffre planifie alors une attaque de grande ampleur pour forcer l’Allemagne à une retraite : la seconde bataille d’Artois, déclenchée le 9 mai 1915.'
@@ -87,7 +92,8 @@ export const assets: Data[] = [
 				width: 1024,
 				height: 1400,
 				src: "Bibliothèque multimédia intercommunale d'Épinal, AFF 1914/63 P/M",
-				thumbnail: 'lowres/situation-politique/union-sacree.webp'
+				thumbnail: 'lowres/situation-politique/union-sacree.webp',
+				parentId: 2
 			},
 			{
 				title: 'Ordre de mobilisation générale',
@@ -95,7 +101,8 @@ export const assets: Data[] = [
 				width: 1024,
 				height: 1272,
 				src: 'Bibliothèque nationale de France, département Estampes et photographie, ENT QB-1 (1914)-FT6',
-				thumbnail: 'lowres/situation-politique/ordre-de-mobilisation-generale.webp'
+				thumbnail: 'lowres/situation-politique/ordre-de-mobilisation-generale.webp',
+				parentId: 2
 			},
 			{
 				title: 'Le Petit Parisien - 22 mai 1915',
@@ -103,7 +110,8 @@ export const assets: Data[] = [
 				width: 2048,
 				height: 2822,
 				src: 'Bibliothèque nationale de France, Gr Fol-Lc2-3850',
-				thumbnail: 'lowres/situation-politique/le-petit-parisien-22-mai-1915.webp'
+				thumbnail: 'lowres/situation-politique/le-petit-parisien-22-mai-1915.webp',
+				parentId: 2
 			},
 			{
 				title: 'Le moral de nos combattants - Le Petit Parisien - 22 mai 1915',
@@ -111,7 +119,8 @@ export const assets: Data[] = [
 				width: 858,
 				height: 2889,
 				src: 'Bibliothèque nationale de France, Gr Fol-Lc2-3850',
-				thumbnail: 'lowres/situation-politique/le_petit_parisien-le-moral-de-nos-combattants.webp'
+				thumbnail: 'lowres/situation-politique/le_petit_parisien-le-moral-de-nos-combattants.webp',
+				parentId: 2
 			},
 			{
 				title: 'Le Petit Parisien - 18 juin 1915',
@@ -119,7 +128,8 @@ export const assets: Data[] = [
 				width: 2048,
 				height: 2777,
 				src: 'Bibliothèque nationale de France, Gr Fol-Lc2-3850',
-				thumbnail: 'lowres/situation-politique/le-petit-parisien_18-06-1915.webp'
+				thumbnail: 'lowres/situation-politique/le-petit-parisien_18-06-1915.webp',
+				parentId: 2
 			}
 		],
 		links: [
@@ -134,10 +144,10 @@ export const assets: Data[] = [
 		title: "Bataille de l'Artois",
 		path: 'bataille-artois',
 		texts: [
-			'Après avoir été arrêté dans les Flandres, l’état-major allemand révise ses plans et décide de concentrer ses forces à l’est pour forcer la Russie à une paix séparée. Les lignes se dégarnissent et des positions choisies, de la Suisse à la mer du nord, sont aménagées pour former un puissant réseau défensif en profondeur, avec des nids de mitrailleuses et des positions d’artillerie, qui annonce le système de tranchées que nous connaissons.',
+			'Après avoir été arrêté dans les Flandres, l’état-major allemand révise ses plans et décide de concentrer ses forces à l’est pour forcer la Russie à une paix séparée. Les lignes se dégarnissent et des positions choisies, de la Suisse à la mer du nord, sont aménagées pour former un puissant réseau défensif en profondeur, avec des nids de mitrailleuses et des positions d’artillerie.',
 			'Pour soulager l’allié russe et poussé par une grande pression nationale pour récupérer les territoires perdus, riches en charbon nécessaires à l’effort de guerre, le généralissime Joffre planifie une offensive d’envergure vers Arras. Cette opération s’inscrit dans la doctrine de l’offensive à outrance, héritée de la culture militaire de 1914. Foch, adjoint de Joffre, supervise l’exécution.',
 			'Cette campagne démarre le 9 mai 1915. L’objectif est de percer les lignes allemandes pour rétablir un peu de mobilité dans cette guerre de position et, au minimum, couper les lignes de communication pour forcer une retraite.',
-			"La préparation des défenses allemandes est sous-estimée, l’infanterie et l’artillerie manquent de coordination. Quelques succès sont atteints au prix d'énormes pertes, 100 000 pertes françaises, 75 000 allemandes. Le général Foch décide de stopper l’offensive le 18 juin, qui est généralement considérée comme un échec."
+			"La préparation des défenses allemandes est sous-estimée, l’infanterie et l’artillerie manquent de coordination. Quelques succès sont atteints au prix d'énormes pertes, 100 000 françaises, 75 000 allemandes. Le général Foch décide de stopper l’offensive le 18 juin, qui est généralement considérée comme un échec."
 		],
 		images: [
 			{
@@ -147,7 +157,8 @@ export const assets: Data[] = [
 				width: 1354,
 				height: 844,
 				src: 'Archives départementales du Pas-de-Calais, 5 Fi 213/7.',
-				thumbnail: 'lowres/bataille-artois/bataille-artois-route-carency-souchez.webp'
+				thumbnail: 'lowres/bataille-artois/bataille-artois-route-carency-souchez.webp',
+				parentId: 3
 			},
 			{
 				title: 'Poste Français à Carency - 1914 - 1915',
@@ -156,7 +167,8 @@ export const assets: Data[] = [
 				width: 1358,
 				height: 880,
 				src: 'Archives départementales du Pas-de-Calais, 5 Fi 213/013',
-				thumbnail: 'lowres/bataille-artois/artois_poste-francais.webp'
+				thumbnail: 'lowres/bataille-artois/artois_poste-francais.webp',
+				parentId: 3
 			},
 			{
 				title: "Carte de la deuxième bataille d'Artois",
@@ -165,7 +177,8 @@ export const assets: Data[] = [
 				width: 639,
 				height: 1051,
 				src: 'Archives départementales du Pas-de-Calais, BHC 236/2.',
-				thumbnail: 'lowres/bataille-artois/15-05-09-bataille-artois-carte.webp'
+				thumbnail: 'lowres/bataille-artois/15-05-09-bataille-artois-carte.webp',
+				parentId: 3
 			},
 			{
 				title: 'Disposition des divisions - Pas de Calais - 16 juin 1915',
@@ -174,7 +187,8 @@ export const assets: Data[] = [
 				width: 1387,
 				height: 1047,
 				src: 'https://www.carto1418.fr/19150616.php',
-				thumbnail: 'lowres/bataille-artois/carte-16-juin-1915.webp'
+				thumbnail: 'lowres/bataille-artois/carte-16-juin-1915.webp',
+				parentId: 3
 			},
 			{
 				title: "Village d'Albain - juin 1915",
@@ -183,7 +197,8 @@ export const assets: Data[] = [
 				width: 1436,
 				height: 903,
 				src: 'Archvies départementales du Pas-de-Calais, 5 Fi 01/064',
-				thumbnail: 'lowres/bataille-artois/bataille-artois_ablain.webp'
+				thumbnail: 'lowres/bataille-artois/bataille-artois_ablain.webp',
+				parentId: 3
 			}
 		],
 		links: [
@@ -204,9 +219,9 @@ export const assets: Data[] = [
 		path: '32-reg',
 		texts: [
 			"Formé lors de la Révolution, Le 32ème régiment d’infanterie se distingue pendant les guerres napoléoniennes et la guerre franco-prussienne. Le 5 août 1914, il est mobilisé à Châtellerault, assigné à la 18ème Division d'infanterie et envoyé en Lorraine. Son baptême du feu a lieu le 13 août contre une force de reconnaissance allemande.",
-			'Après les succès  de l’armée allemande en Belgique, le régiment participe à la bataille de la Marne qui stoppe son avancée. Il sera ensuite redéployé vers Ypres, où les lignes du front se figent et chaque avancée se paye avec des assauts couteux.',
+			'Après les succès de l’armée allemande en Belgique, le régiment participe à la bataille de la Marne qui stoppe son avancée. Il sera ensuite redéployé vers Ypres, où les lignes du front se figent et chaque gain se paye par des assauts couteux.',
 			"Le 22 avril 1915, l’Allemagne utilise pour la première fois sur le front de l'ouest un gaz asphyxiant vers cette région d’Ypres et, profitant de la panique provoquée par cette nouvelle arme, perce une brèche de quelques kilomètres et tente de progresser vers Calais. Cette avancée est finalement stoppée le 30 avril après de violents combats, auxquels participe le 32e RI.",
-			'Sélectioné pour la grande offensive d’Artois planifiée par le général Joffre, le régiment est placé vers la ville de Souchez, avec pour objectif de prendre la côte 140. Le 16 juin, après plusieurs assauts infructueux, une offensive de grande ampleur est donné. Louis Merceron est probablement blessé par les bombardements préparatoires précédents l’attaque.'
+			'Sélectionné pour la grande offensive d’Artois planifiée par le général Joffre, le régiment est placé vers la ville de Souchez, avec pour objectif de prendre la côte 140. Le 16 juin, après plusieurs assauts infructueux, une offensive de grande ampleur est donnée. Louis Merceron est blessé par un bombardement préparatoire précédent l’attaque.'
 		],
 		images: [
 			{
@@ -216,7 +231,8 @@ export const assets: Data[] = [
 				width: 2481,
 				height: 7081,
 				src: "Ce que nous avons fait, historique du 32e régiment d'infanterie pendant la campagne 1914-1919 / André Gadioux et Maurice Pouron -- Service historique de la Défense, 2011-323932",
-				thumbnail: 'lowres/32-eme-regiment-infanterie/arrive-au-corps-dec-1914.webp'
+				thumbnail: 'lowres/32-eme-regiment-infanterie/arrive-au-corps-dec-1914.webp',
+				parentId: 4
 			},
 			{
 				title: 'JMO - 30 avril 1915',
@@ -225,7 +241,8 @@ export const assets: Data[] = [
 				width: 2242,
 				height: 1671,
 				src: 'J.M.O. - 5 août 1914-31 décembre 1916 - 26 N 605/12 - Cote : 26 N 605/12',
-				thumbnail: 'lowres/32-eme-regiment-infanterie/jmo-30-avril.webp'
+				thumbnail: 'lowres/32-eme-regiment-infanterie/jmo-30-avril.webp',
+				parentId: 4
 			},
 			{
 				title: 'Tranchée - côte 119',
@@ -234,7 +251,8 @@ export const assets: Data[] = [
 				width: 1072,
 				height: 690,
 				src: 'Notre-Dame de Lorette - Les Tranchées de la cote 119 (The Trenches of the Cote 119). Archives départementales du Pas-de-Calais, 5 Fi 01/124.',
-				thumbnail: 'lowres/32-eme-regiment-infanterie/cote-119.webp'
+				thumbnail: 'lowres/32-eme-regiment-infanterie/cote-119.webp',
+				parentId: 4
 			},
 			{
 				title: "Carte de l'attaque du 16 Juin 1915",
@@ -243,7 +261,8 @@ export const assets: Data[] = [
 				width: 1566,
 				height: 963,
 				src: "Ce que nous avons fait, historique du 32e régiment d'infanterie pendant la campagne 1914-1919 / André Gadioux et Maurice Pouron -- Service historique de la Défense, 2011-323932",
-				thumbnail: 'lowres/32-eme-regiment-infanterie/carte-bataille-artois.webp'
+				thumbnail: 'lowres/32-eme-regiment-infanterie/carte-bataille-artois.webp',
+				parentId: 4
 			},
 			{
 				title: 'JMO - 15 et 16 juin 1915',
@@ -252,7 +271,8 @@ export const assets: Data[] = [
 				width: 2249,
 				height: 1654,
 				src: 'J.M.O. - 5 août 1914-31 décembre 1916 - 26 N 605/12 - Cote : 26 N 605/12',
-				thumbnail: 'lowres/32-eme-regiment-infanterie/jmo-15-16-juin.webp'
+				thumbnail: 'lowres/32-eme-regiment-infanterie/jmo-15-16-juin.webp',
+				parentId: 4
 			},
 			{
 				title: '3ème RI rhénan - 16 juin 1915',
@@ -261,7 +281,8 @@ export const assets: Data[] = [
 				width: 4962,
 				height: 3509,
 				src: '[Das Infanterie-Regiment von Horn (3. Rheinisches) Nr. 29] Band 2 - Signatur F 388-Pr.,292',
-				thumbnail: 'lowres/32-eme-regiment-infanterie/historique-RI-rhenan.webp'
+				thumbnail: 'lowres/32-eme-regiment-infanterie/historique-RI-rhenan.webp',
+				parentId: 4
 			}
 		],
 		links: [
@@ -280,9 +301,9 @@ export const assets: Data[] = [
 		title: 'Louis Merceron',
 		path: 'louis-merceron',
 		texts: [
-			'Louis Merceron est né le 12 février 1895 à Saint Clémentin. Il est issu d’un milieu rural, habitué aux travaux pénibles et à des conditions de vie simples. Il a 19 ans lors de l’entrée en guerre de la France et aurait dû faire partie de la classe 1915, puisque les recrutements commençaient à 20 ans, mais est incorporé au 32ème régiment d’infanterie le 17 décembre 1914 et fait donc partie de la classe 1914.',
-			'Il participe probablement aux violents combats dans la région d’Ypres en Belgique début 1915. Il se trouve sans doute non loin de la première attaque au gaz asphyxiant, le 22 avril 1915.',
-			'Il est déployé avec son régiment pour la grande offensive à Arras, début mai. Avant l’assaut du 16 juin, il est vraisemblablement blessé par un tir d’artillerie préparatoire. Il est évacué vers l’ambulance 1/70 au hameau des Quatre-Vents, où il meurt de ses blessures lors d’un changement de pansement, vers 6 heures du matin. Un religieux est témoin de ses derniers moments et loue son courage.'
+			'Louis Merceron est né le 12 février 1895 à Saint Clémentin. Il est issu d’un milieu rural, habitué aux travaux pénibles et à des conditions de vie simples. Âgé de 19 ans lors de l’entrée en guerre de la France, il est incorporé au 32ème régiment d’infanterie le 17 décembre 1914.',
+			'Au début de l’année 1915, il participe probablement aux violents combats dans la région d’Ypres, en Belgique, et se trouve non loin de la première attaque au gaz asphyxiant, le 22 avril 1915.',
+			'Il est déployé avec son régiment pour la grande offensive d’Arras, au début de mois de mai. Avant l’assaut du 16 juin, il est blessé par un éclat d’obus et est évacué vers l’ambulance 1/70 au hameau des Quatre-Vents. Vers 6 heures du matin, il meurt de ses blessures lors d’un changement de pansement. Un religieux est témoin de ses derniers instants et loue son courage.'
 		],
 		images: [
 			{
@@ -292,23 +313,26 @@ export const assets: Data[] = [
 				width: 944,
 				height: 1417,
 				src: 'https://www.memoiredeshommes.sga.defense.gouv.fr/conflits-et-operations-2/premiere-guerre-mondiale/morts-pour-la-france-de-la-premiere-guerre-mondiale/faire-une-recherche?detail=5589866&arko_default_670f920646a08--modeRestit=arko_default_670fa8ee50d1b',
-				thumbnail: 'lowres/louis-merceron/avis-deces.webp'
+				thumbnail: 'lowres/louis-merceron/avis-deces.webp',
+				parentId: 5
 			},
 			{
 				title: 'Lettre - Ambulance 1-70',
 				desc: 'desc carte',
 				path: './louis-merceron/lettre-mort.jpg',
-				width: 1488,
-				height: 2048,
-				thumbnail: 'lowres/louis-merceron/lettre-mort.webp'
+				width: 2048,
+				height: 1488,
+				thumbnail: 'lowres/louis-merceron/lettre-mort.webp',
+				parentId: 5
 			},
 			{
 				title: 'Décès - Archives paroisse St-Clémentin',
 				path: './louis-merceron/deces-paroisse.jpg',
-				width: 531,
-				height: 708,
+				width: 531 * 2,
+				height: 708 * 2,
 				thumbnail: 'lowres/louis-merceron/deces-paroisse.webp',
-				src: 'Archives paroisse St-Clémentin'
+				src: 'Archives paroisse St-Clémentin',
+				parentId: 5
 			},
 			{
 				title: 'Fiche matriculaire',
@@ -316,15 +340,17 @@ export const assets: Data[] = [
 				path: './louis-merceron/matricule.jpg',
 				width: 2104,
 				height: 3120,
-				thumbnail: 'lowres/louis-merceron/matricule.webp'
+				thumbnail: 'lowres/louis-merceron/matricule.webp',
+				parentId: 5
 			},
 			{
 				title: 'Pose en uniforme',
 				desc: 'desc carte',
 				path: './louis-merceron/pose-uniforme.jpg',
-				width: 298,
-				height: 446,
-				thumbnail: 'lowres/louis-merceron/pose-uniforme.webp'
+				width: 298 * 2,
+				height: 446 * 2,
+				thumbnail: 'lowres/louis-merceron/pose-uniforme.webp',
+				parentId: 5
 			},
 
 			{
@@ -333,16 +359,18 @@ export const assets: Data[] = [
 				path: './louis-merceron/tombe.jpg',
 				width: 1836,
 				height: 3264,
-				thumbnail: 'lowres/louis-merceron/tombe.webp'
-			},
-			{
-				title: 'Mémorial',
-				desc: 'desc carte',
-				path: './louis-merceron/memorial.jpg',
-				width: 960,
-				height: 1280,
-				thumbnail: 'lowres/louis-merceron/memorial.webp'
+				thumbnail: 'lowres/louis-merceron/tombe.webp',
+				parentId: 5
 			}
+			// {
+			// 	title: 'Mémorial',
+			// 	desc: 'desc carte',
+			// 	path: './louis-merceron/memorial.jpg',
+			// 	width: 960,
+			// 	height: 1280,
+			// 	thumbnail: 'lowres/louis-merceron/memorial.webp',
+			// 	parentId: 5
+			// }
 		],
 		links: [
 			{
